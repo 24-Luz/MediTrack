@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package meditrack;
+
+/**
+ *
+ * @author angie
+ */
+public class Medico {
+    
+    private String id_medico;
+    private String nombre;
+    private String especialidad;
+   
+    // Constructores
+    
+    public Medico (String id_medico, String nombre, String especialidad) {
+        this.id_medico = id_medico;
+        this.nombre = nombre;
+        this.especialidad = especialidad; 
+    }
+    
+    public Medico (String id_medico, String nombre){
+        this.id_medico = id_medico;
+        this.nombre = nombre;
+        this.especialidad = "General"; // especialidad por defecto
+        
+    }
+    
+    // Metodos
+    public void mostrar_informacion (){
+        System.out.println("Medico - Especialista");
+        System.out.println("ID Medico: " + id_medico);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Especialidad: " + especialidad);
+    }
+    
+    public void aceptar_cita(){
+        System.out.println("El medico " + nombre + " ha aceptado la cita.");
+    }
+    
+    public void rechazar_cita(){
+        System.out.println("El medico " + nombre + " ha rechazado la cita.");
+    }
+    
+    public void ver_agenda(){
+        System.out.println("La agenda del medico " + nombre + " Es:"); // se debe hacer un vector que guarde las citas que tiene el medico y las fechas que ha puesto el administrador
+    }
+}

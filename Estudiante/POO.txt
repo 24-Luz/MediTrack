@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package poo;
+ 
+/**
+ *
+ * @author angie
+ */
+public class POO {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Estudiante estudiante1 = new Estudiante ("Camila", 17, "tercero");
+        Estudiante estudiante2 = new Estudiante ("Santiago", 4);
+        Estudiante estudiante3 = new Estudiante ("Matthew");
+        
+        estudiante1.mostrar_informacion();
+        estudiante1.saludar();
+        
+        estudiante2.mostrar_informacion();
+        estudiante2.saludar();
+        
+        estudiante3.mostrar_informacion();
+        estudiante3.saludar();
+    }
+}

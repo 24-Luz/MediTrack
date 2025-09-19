@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package meditrack;
+
+/**
+ *
+ * @author angie
+ */
+public class MediTrack {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Medico medico1 = new Medico ("P-101", "Juan Pablo Calderon", "Pediatria");
+        Medico medico2 = new Medico ("G-204", "Maria Hernadez");
+        
+        medico1.mostrar_informacion();
+        medico1.aceptar_cita();
+        medico1.ver_agenda();
+        
+        medico2.mostrar_informacion();
+        medico2.rechazar_cita();
+    }
+    
+}
