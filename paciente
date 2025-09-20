@@ -1,0 +1,55 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Representa a un Paciente, que es un tipo de Usuario.
+ * Tiene la capacidad de gestionar sus citas médicas.
+ */
+public class Paciente extends Usuario {
+
+    // Atributo para la relación con Cita
+    private List<Cita> agenda;
+
+    // Constructor vacío
+    public Paciente() {
+        super(); // Llama al constructor de la clase padre
+        this.agenda = new ArrayList<>();
+    }
+
+    // Constructor con parámetros
+    public Paciente(String idUsuario, String nombreCompleto, String correo, long telefono, String contrasena) {
+        // Llama al constructor de la clase padre para inicializar los atributos heredados
+        super(idUsuario, nombreCompleto, correo, telefono, contrasena, "Paciente");
+        this.agenda = new ArrayList<>();
+    }
+    
+    // Getters y Setters para sus propios atributos
+    public List<Cita> getAgenda() {
+        return agenda;
+    }
+
+    public void setAgenda(List<Cita> agenda) {
+        this.agenda = agenda;
+    }
+
+    // Métodos específicos de Paciente
+    public void agendarCita() {
+        System.out.println("Paciente agendando una cita...");
+    }
+
+    public void modificarCita() {
+        System.out.println("Paciente modificando una cita...");
+    }
+
+    public void cancelarCita() {
+        System.out.println("Paciente cancelando una cita...");
+    }
+
+    public void verDisponibilidad() {
+        System.out.println("Paciente viendo disponibilidad de médicos...");
+    }
+
+    public void recibirRecordatorio() {
+        System.out.println("Paciente recibiendo recordatorio de cita...");
+    }
+}
